@@ -1,0 +1,25 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="mustapha.mcfearson.krystov.Controller.DataController">
+    <VBox spacing="10" layoutX="10" layoutY="10">
+        <TextField fx:id="keyField" promptText="Enter key"/>
+        <TextField fx:id="valueField" promptText="Enter value"/>
+        <HBox spacing="10">
+            <Button text="Add" onAction="#onAdd"/>
+            <Button text="Delete" onAction="#onDelete"/>
+            <Button text="Update" onAction="#onUpdate"/>
+        </HBox>
+        <TableView fx:id="tableView">
+            <columns>
+                <TableColumn text="Key" fx:id="keyColumn"/>
+                <TableColumn text="Value" fx:id="valueColumn"/>
+            </columns>
+        </TableView>
+    </VBox>
+</AnchorPane>

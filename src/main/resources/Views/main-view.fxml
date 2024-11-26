@@ -1,0 +1,10 @@
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<TabPane xmlns:fx="http://javafx.com/fxml">
+    <Tab text="Regex" closable="false">
+        <fx:include source="regex-view.fxml"/>
+    </Tab>
+    <Tab text="Data Management" closable="false">
+        <fx:include source="data-view.fxml"/>
+    </Tab>
+</TabPane>
